@@ -5,6 +5,7 @@ const TodoItem = ({ id, isDone, content, date, onUpdate, onDelete }) => {
     onUpdate(id);
   };
 
+  // 삭제 기능: 그냥 id값을 지워버림
   const onClickDeleteButton = () => {
     onDelete(id);
   };
