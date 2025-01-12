@@ -1,8 +1,9 @@
 import "./App.css";
-import { useState, useRef } from "react";
+import { useState, useRef, useReducer } from "react";
 import Header from "./components/Header";
 import Editor from "./components/Editor";
 import List from "./components/List";
+import Exam from "./components/Exam";
 
 // 임의 데이터 생성
 const mockData = [
@@ -68,6 +69,7 @@ function App() {
       <Header />
       <Editor onCreate={onCreate} />
       <List todos={todos} onUpdate={onUpdate} onDelete={onDelete} />
+      <Exam />
     </div>
   );
 }
